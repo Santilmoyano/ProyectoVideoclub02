@@ -9,7 +9,6 @@ const Login = () => {
         <Navbar/>
         <Loginmain/>
         <Footer/>
-        
     </div>
   )
 }

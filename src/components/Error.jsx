@@ -1,9 +1,12 @@
 import React from 'react'
 import logo from "../assets/logo.ico"
+import Navbar from '../components/Navbar'
+
 
 const Error = () => {
   return (
     <>
+    <Navbar/>
     <div class="container mx-auto  w-max ">
     <img src={logo} alt="logo"  />
     </div>

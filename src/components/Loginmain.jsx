@@ -25,7 +25,7 @@ const handleSubmit = (e) =>{
 
   return (
     <>
-      <div className="flex flex-row w-screen h-screen">
+      <div className="flex flex-row w-screen h-screen bg-gray-900">
         <div className="w-1/2 h-75% flex items-center justify-center">
           <Carousel className="rounded shadow-sm">
             <img
@@ -46,7 +46,6 @@ const handleSubmit = (e) =>{
           </Carousel>
         </div>
         <div class="flex mt-28 mr-60 ml-40 ">
-         
           <form onSubmit={handleSubmit} class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w- h-2/3">
           <h3 className="mb-5 font-bold text-2xl font-sans tracking-wide ">Iniciar sesion</h3>
             <div class="mb-4">

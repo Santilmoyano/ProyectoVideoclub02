@@ -1,6 +1,7 @@
 import React from 'react'
 import { GoPerson } from "react-icons/go";
 import logo from "../assets/logo.ico"
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -16,8 +17,8 @@ const Navbar = () => {
               </div>
               <div class="flex items-center ml-56 ">
                 <div class="flex space-x-4">
-                  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-lg font-medium  text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Inicio</a>
-                  <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Peliculas</a>
+                  <Link to="/" class="rounded-md bg-gray-900 px-3 py-2 text-lg font-medium  text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Inicio</Link>
+                  <Link to="/peliculas" class="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Peliculas</Link>
                 </div>
               </div>
             </div>
@@ -29,7 +30,7 @@ const Navbar = () => {
               </form>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center pr-0 sm:static sm:inset-auto  ">
-              <a href="#" class="text-xl rounded-full hover:bg-gray-700 mr-10" ><GoPerson color='white' /></a>
+              <Link to="/" class="text-xl rounded-full hover:bg-gray-700 mr-10" ><GoPerson color='white' /></Link>
             </div>
           </div>
         <div class="sm:hidden" id="mobile-menu">
