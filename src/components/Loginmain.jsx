@@ -7,21 +7,19 @@ import dune from "../assets/furiosa.jpg";
 import boys from "../assets/dune02.jpg";
 
 const Loginmain = () => {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-  const [username , setUsername] = useState ("")
-  const [password , setPassword] = useState ("")
-
-const handleSubmit = (e) =>{
-  e.preventDefault()
- alert("Se inicio sesion correctamente")
- navigate("/Home")
- e.target.reset()
- setUsername("")
- setPassword("")
-
-}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Se inicio sesion correctamente");
+    navigate("/Home");
+    e.target.reset();
+    setUsername("");
+    setPassword("");
+  };
 
   return (
     <>
@@ -46,9 +44,13 @@ const handleSubmit = (e) =>{
           </Carousel>
         </div>
         <div class="flex mt-28 mr-60 ml-40 ">
-         
-          <form onSubmit={handleSubmit} class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w- h-2/3">
-          <h3 className="mb-5 font-bold text-2xl font-sans tracking-wide ">Iniciar sesion</h3>
+          <form
+            onSubmit={handleSubmit}
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w- h-2/3"
+          >
+            <h3 className="mb-5 font-bold text-2xl font-sans tracking-wide ">
+              Iniciar sesion
+            </h3>
             <div class="mb-4">
               <label
                 class="block text-gray-700 text-sm font-bold mb-2"
@@ -61,7 +63,7 @@ const handleSubmit = (e) =>{
                 id="username"
                 type="text"
                 placeholder="Username"
-                onChange={(e)=>setUsername(e.target.value)}
+                onChange={(e) => setUsername(e.target.value)}
               />
             </div>
             <div class="mb-6">
@@ -76,7 +78,7 @@ const handleSubmit = (e) =>{
                 id="password"
                 type="password"
                 placeholder="*****"
-                onChange={(e)=>setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div class="flex items-center justify-between">

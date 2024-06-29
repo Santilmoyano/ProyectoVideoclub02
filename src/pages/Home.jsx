@@ -1,9 +1,16 @@
+import Main from "../components/Main"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import React from 'react'
 
 const Home = () => {
   return (
     <div>
-        <h2>home page</h2>
+       
+    <Navbar/>
+    <Main/>
+    <Footer/>   
+    
     </div>
   )
 }
